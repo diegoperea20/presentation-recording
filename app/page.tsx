@@ -22,7 +22,9 @@ import {
   Moon,
   Menu,
   X,
+  Github,
 } from "lucide-react";
+import Link from "next/link";
 
 interface PDFPage {
   pageNumber: number;
@@ -1209,6 +1211,16 @@ const getDefaultBackgroundColor = () => {
                     Stop
                   </Button>
                 )}
+            
+                <Link 
+                  href="https://github.com/diegoperea20/presentation-recording" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors ml-2"
+                  title="View on GitHub"
+                >
+                  <Github className="w-5 h-5" />
+                </Link>
               </div>
             </div>
           </div>
